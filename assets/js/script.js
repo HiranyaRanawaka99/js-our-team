@@ -1,10 +1,9 @@
 
-
 const team = [
     {
         nome: 'Wayne Barnett',
         ruolo: 'Founder & CEO',
-        foto: 'barnett-founder-ceo.jpg'
+        foto: 'h',
     },
     {
         nome: 'Angela Caroll',
@@ -40,4 +39,25 @@ console.log(team[2]);
 console.log(team[3]);
 console.log(team[4]);
 console.log(team[5]);
+
+//MILLESTONE 2 + BONUS 2
+
+
+for (const member of team) {
+    const cardsContainer = document.getElementById('cards-container');
+    
+    cardsContainer.innerHTML += `
+    
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src='' alt=""> ${member.foto}
+      <div class="card-body">
+        <h5 class="card-title"> Member </h5>
+        <p class="card-text">${member.nome} <br> ${member.ruolo}</p>
+      </div>
+    </div>
+    
+    `
+
+}
+
 
