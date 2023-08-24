@@ -3,7 +3,7 @@ const team = [
     {
         nome: 'Wayne Barnett',
         ruolo: 'Founder & CEO',
-        foto: 'h',
+        foto: 'angela-lopez-social-media-manager.jpg'
     },
     {
         nome: 'Angela Caroll',
@@ -13,7 +13,7 @@ const team = [
     {
         nome: 'Walter Gordon',
         ruolo: 'Office Manager',
-        foto: 'gordon-office-manager.jpg',
+        foto: 'walter-gordon-office-manager.jpg',
     },
     {
         nome: 'Angela Lopez',
@@ -49,7 +49,7 @@ for (const member of team) {
     cardsContainer.innerHTML += `
     
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src='' alt=""> ${member.foto}
+      <img class="card-img-top" src='assets/images/${member.foto}' alt=""> 
       <div class="card-body">
         <h5 class="card-title"> Member </h5>
         <p class="card-text">${member.nome} <br> ${member.ruolo}</p>
